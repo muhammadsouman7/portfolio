@@ -1,0 +1,1255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Souman</title>
+
+    <!-- ===== Google-Fonts ===== -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+    <!-- ===== Font-Awesome-Link ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <!-- ===== Css-Files ===== -->
+    <link rel="icon" href="logo.png" type="image/icon type">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- ===== Pre-loader ===== -->
+    <div class="loader-container" id="loader">
+        <div class="loader"></div>
+    </div>
+    <!-- End-Pre-Loader -->
+    <!-- ===== Back To Top ===== -->
+    <button onclick="backToTop()" id="backToTop">
+    <i class="fa-solid fa-chevron-up"></i>
+</button>
+    <!-- End-Back-To-Top -->
+    <!-- ===== Header ===== -->
+    <div id="header">
+        <!-- ===== Navigation-Bar ===== -->
+        <div class="navigation">
+            <div class="menu-toggle"></div>
+            <ul class="nav-list">
+                <li id="home-li" class="active list-item">
+                    <a href="#header">
+                        <span class="icon">
+                            <i class="fa-solid fa-house-chimney"></i>
+                        </span>
+                        <span class="text">
+                            Home
+                        </span>
+                    </a>
+                </li>
+
+                <li id="about-li" class="list-item">
+                    <a href="#about-section">
+                        <span class="icon">
+                            <i class="fa-solid fa-user"></i>
+                        </span>
+                        <span class="text">
+                            About
+                        </span>
+                    </a>
+                </li>
+
+                <li id="service-li" class="list-item">
+                    <a href="#service-section">
+                        <span class="icon">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </span>
+                        <span class="text">
+                            Services
+                        </span>
+                    </a>
+                </li>
+
+                <li id="portfolio-li" class="list-item">
+                    <a href="#portfolio-section">
+                        <span class="icon">
+                            <i class="fa-solid fa-image"></i>
+                        </span>
+                        <span class="text">
+                            Portfolio
+                        </span>
+                    </a>
+                </li>
+
+                <li id="resume-li" class="list-item">
+                    <a href="#resume-section">
+                        <span class="icon">
+                            <i class="fa-solid fa-address-card"></i>
+                        </span>
+                        <span class="text">
+                            Resume
+                        </span>
+                    </a>
+                </li>
+
+                <li id="contact-li" class="list-item">
+                    <a href="#contact-section">
+                        <span class="icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </span>
+                        <span class="text">
+                            Contact
+                        </span>
+                    </a>
+                </li>
+
+                <li id="darkMode" class="list-item">
+                    <button id="modeChange">
+                        <span class="icon" id="mode-icon">
+                            <i class="fa-solid fa-sun"></i>
+                        </span>
+                        <span class="text" id="text">
+                            Light Mode
+                        </span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <!-- End-Navigation-Bar -->
+
+        <!-- ===== Mobile Navigation ===== -->
+        <div id="mobile-nav" class="mobile-nav">
+            <ul class="nav-list">
+                <li id="mobileHome" class="active list-item">
+                    <a href="#home">
+                        <span class="icon">
+                            <i class="fa-solid fa-house-chimney"></i>
+                        </span>
+                        <span class="text">
+                            Home
+                        </span>
+                    </a>
+                </li>
+
+                <li id="mobileAbout" class="list-item">
+                    <a href="#about-section">
+                        <span class="icon">
+                            <i class="fa-solid fa-user"></i>
+                        </span>
+                        <span class="text">
+                            About
+                        </span>
+                    </a>
+                </li>
+
+                <li id="mobileService" class="list-item">
+                    <a href="#service-section">
+                        <span class="icon">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </span>
+                        <span class="text">
+                            Services
+                        </span>
+                    </a>
+                </li>
+
+                <li id="mobilePortfolio" class="list-item">
+                    <a href="#portfolio-section">
+                        <span class="icon">
+                            <i class="fa-solid fa-image"></i>
+                        </span>
+                        <span class="text">
+                            Portfolio
+                        </span>
+                    </a>
+                </li>
+
+                <li id="mobileResume" class="list-item">
+                    <a href="#resume-section">
+                        <span class="icon">
+                            <i class="fa-solid fa-address-card"></i>
+                        </span>
+                        <span class="text">
+                            Resume
+                        </span>
+                    </a>
+                </li>
+
+                <li id="mobileContact" class="list-item">
+                    <a href="#contact-section">
+                        <span class="icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </span>
+                        <span class="text">
+                            Contact
+                        </span>
+                    </a>
+                </li>
+
+                <li id="MobDarkMode" class="list-item">
+                    <button id="MobModeChange">
+                        <span class="icon" id="mob-mode-icon">
+                            <i class="fa-solid fa-sun"></i>
+                        </span>
+                        <span class="text" id="MobileText">
+                            Light Mode
+                        </span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <!-- End-Mobile-Navigation-Bar -->
+        <div id="home">
+            <!-- ===== Introduction ===== -->
+            <div class="container my-info">
+                <h2>
+                    Hi there, I am
+                </h2>
+                <h1>
+                    Muhammad Souman
+                </h1>
+                <h2>
+                    I am a Professional <span class="type" id="profession"></span>
+                </h2>
+            </div>
+            <!-- End-Introduction  -->
+
+            <!-- ===== Social-Links ===== -->
+            <div class="container social-links">
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/souman.07/" target="_blank">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/m_souman.07/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/MuhammadSouman1" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/muhammad-souman-057705230/" target="_blank">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- End-Social-Links -->
+
+        </div>
+    </div>
+    <!-- End-Header -->
+
+    <!-- About-Section -->
+    <div id="about-section" class="container-fluid wrapper ">
+        <!-- ===== About-Me ===== -->
+        <div class="about-me container-fluid ">
+
+            <div class="title ">
+                <h2>About Me</h2>
+                <span>Learn about me</span>
+            </div>
+
+            <!-- === Row === -->
+            <div class="row ">
+
+                <div class="col-lg-4 d-flex justify-content-center ">
+                    <div class="img-box mt-3 ">
+                        <img src="my_img.jpg " alt="my image ">
+                    </div>
+                </div>
+                <!-- End-Col -->
+
+                <div class="col-lg-8 pt-4 pt-lg-0 content ">
+                    <h3>Full Stack Web Developer</h3>
+                    <p>
+                        My name is Muhammad Souman and I am a Full Stack Web Developer with 3 years of experience with Front-End Web Development and 6 months of experience in Java and 6 months of experience in C++. I am currently completing my Bachelors in Artificial Intelligence
+                        from National University of Modern Languages, Islamabad. My primary focus for my studies is Web Development. I am very passionate about Web Development, and continuously try to better myself as a developer.
+                    </p>
+
+                    <p>
+                        I am highly organized and hard-working individual always trying to gain practical experience and to make use of my interpersonal skills to achieve goals that focus on customer satisfaction and customer experience.
+                    </p>
+
+                    <!-- ===== Details ===== -->
+                    <!-- === Row === -->
+                    <div class="row ">
+
+                        <div class="col-lg-6 ">
+                            <ul>
+                                <li><i class="fa-solid fa-chevron-right "></i><strong>Birthday:</strong> <span>1st October</span></li>
+                                <li><i class="fa-solid fa-chevron-right "></i><strong>Website:</strong> <span>www.msouman.com</span></li>
+                                <li><i class="fa-solid fa-chevron-right "></i><strong>Phone:</strong> <span>+92 332 588 2447</span></li>
+                                <li><i class="fa-solid fa-chevron-right "></i><strong>City:</strong> <span>Rawalpindi, Pakistan</span></li>
+                            </ul>
+                        </div>
+                        <!-- End-Col -->
+
+                        <div class="col-lg-6 ">
+                            <ul>
+                                <li><i class="fa-solid fa-chevron-right "></i><strong>Age:</strong> <span>20</span></li>
+                                <li><i class="fa-solid fa-chevron-right "></i><strong>Degree:</strong> <span>Bachelors in Artificial Intelligence</span></li>
+                                <li><i class="fa-solid fa-chevron-right "></i><strong>Email:</strong> <span>muhammadsouman7@gmail.com</span></li>
+                                <li><i class="fa-solid fa-chevron-right "></i><strong>Freelance:</strong> <span>Available</span></li>
+                            </ul>
+                        </div>
+                        <!-- End-Col -->
+
+                    </div>
+                    <!-- End-Row -->
+                    <!-- End-Details -->
+
+                </div>
+                <!-- End-Col -->
+
+            </div>
+            <!-- End-Row -->
+
+        </div>
+        <!-- End-About-Me -->
+
+        <!-- ===== My-Skills ===== -->
+        <div class="skills container-fluid ">
+
+            <div class="title ">
+                <h2>My Skills</h2>
+            </div>
+
+            <!-- === Row === -->
+            <div class="row skills-content ">
+
+                <div class="col-lg-6 ">
+
+                    <div class="progress ">
+                        <div class="skill ">
+                            HTML5
+                            <span class="percent ">95%</span>
+                        </div>
+                        <div class="progress-bar-wrap ">
+                            <div class="progress-bar html "></div>
+                        </div>
+                    </div>
+
+                    <div class="progress ">
+                        <div class="skill ">CSS3<span class="percent ">95%</span></div>
+                        <div class="progress-bar-wrap ">
+                            <div class="progress-bar css "></div>
+                        </div>
+                    </div>
+
+                    <div class="progress ">
+                        <div class="skill ">JavaScript<span class="percent ">85%</span></div>
+                        <div class="progress-bar-wrap ">
+                            <div class="progress-bar js "></div>
+                        </div>
+                    </div>
+
+                    <div class="progress ">
+                        <div class="skill ">JQuery<span class="percent ">90%</span></div>
+                        <div class="progress-bar-wrap ">
+                            <div class="progress-bar jquery "></div>
+                        </div>
+                    </div>
+
+                    <div class="progress ">
+                        <div class="skill ">Bootstrap<span class="percent ">95%</span></div>
+                        <div class="progress-bar-wrap ">
+                            <div class="progress-bar bootstrap "></div>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- End-Col -->
+
+                <div class="col-lg-6 ">
+
+                    <div class="progress ">
+                        <div class="skill ">UI / UX Design<span class="percent ">95%</span></div>
+                        <div class="progress-bar-wrap ">
+                            <div class="progress-bar ui-ux "></div>
+                        </div>
+                    </div>
+
+                    <div class="progress ">
+                        <div class="skill ">Java<span class="percent ">80%</span></div>
+                        <div class="progress-bar-wrap ">
+                            <div class="progress-bar java "></div>
+                        </div>
+                    </div>
+
+                    <div class="progress ">
+                        <div class="skill ">C++<span class="percent ">85%</span></div>
+                        <div class="progress-bar-wrap ">
+                            <div class="progress-bar cpp "></div>
+                        </div>
+                    </div>
+
+                    <div class="progress ">
+                        <div class="skill ">Python<span class="percent ">65%</span></div>
+                        <div class="progress-bar-wrap ">
+                            <div class="progress-bar python"></div>
+                        </div>
+                    </div>
+
+                    <div class="progress ">
+                        <div class="skill ">MySQL Database<span class="percent ">75%</span></div>
+                        <div class="progress-bar-wrap ">
+                            <div class="progress-bar my-sql "></div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- End-Col -->
+
+            </div>
+
+        </div>
+        <!-- End-My-Skills -->
+
+        <!-- ===== My-Hobbies ===== -->
+        <div class="hobbies container-fluid ">
+
+            <div class="title ">
+                <h2>My Hobbies</h2>
+            </div>
+
+            <!-- === Row === -->
+            <div class="row justify-content-center ">
+
+                <div class="col-lg-3 col-md-4 ">
+                    <div class="icon-box ">
+                        <i class="fa-solid fa-laptop-code "></i>
+                        <h3>Coding</h3>
+                    </div>
+                </div>
+                <!-- End-Col -->
+
+                <div class="col-lg-3 col-md-4 mt-4 mt-md-0 ">
+                    <div class="icon-box ">
+                        <i class="fa-solid fa-dice-d6 "></i>
+                        <h3>Gaming</h3>
+                    </div>
+                </div>
+                <!-- End-Col -->
+
+                <div class="col-lg-3 col-md-4 mt-4 mt-md-0 ">
+                    <div class="icon-box ">
+                        <i class="fa-solid fa-film "></i>
+                        <h3>Movies</h3>
+                    </div>
+                </div>
+                <!-- End-Col -->
+
+                <div class="col-lg-3 col-md-4 mt-4 mt-lg-0 ">
+                    <div class="icon-box ">
+                        <i class="fa-solid fa-book "></i>
+                        <h3>Reading</h3>
+                    </div>
+                </div>
+                <!-- End-Col -->
+
+                <div class="col-lg-3 col-md-4 mt-4 ">
+                    <div class="icon-box ">
+                        <i class="fa-solid fa-music "></i>
+                        <h3>Music</h3>
+                    </div>
+                </div>
+                <!-- End-Col -->
+
+                <div class="col-lg-3 col-md-4 mt-4 ">
+                    <div class="icon-box ">
+                        <i class="fa-solid fa-photo-film "></i>
+                        <h3>Editing</h3>
+                    </div>
+                </div>
+                <!-- End-Col -->
+
+                <div class="col-lg-3 col-md-4 mt-4 ">
+                    <div class="icon-box ">
+                        <i class="fa-solid fa-location-dot "></i>
+                        <h3>Traveling</h3>
+                    </div>
+                </div>
+                <!-- End-Col -->
+
+                <div class="col-lg-3 col-md-4 mt-4 ">
+                    <div class="icon-box ">
+                        <i class="fa-brands fa-figma "></i>
+                        <h3>Designing</h3>
+                    </div>
+                </div>
+                <!-- End-Col -->
+
+            </div>
+            <!-- End-Row -->
+
+            <hr>
+        </div>
+        <!-- End-My-Hobbies -->
+    </div>
+    <!-- End-About-Section -->
+
+    <!-- Service-Section -->
+    <div id="service-section" class="container-fluid wrapper">
+
+        <!-- ===== Services-Details ===== -->
+
+        <div class="my-services container-fluid ">
+
+            <div class="title " data-aos="fade-down " data-aos-offset="100 " data-aos-delay="50 " data-aos-duration="1000 " data-aos-easing="ease-in-out " data-aos-mirror="true " data-aos-once="true ">
+                <h2>Services</h2>
+                <span>See My Services</span>
+            </div>
+
+            <!-- ===== My-Services ===== -->
+
+            <!-- === Row === -->
+            <div class="row justify-content-center ">
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch " data-aos="fade-right " data-aos-offset="100 " data-aos-delay="50 " data-aos-duration="1000 " data-aos-easing="ease-in-out " data-aos-mirror="true " data-aos-once="true ">
+                    <div class="icon-box ">
+                        <div class="icon ">
+                            <i class="fa-solid fa-display "></i>
+                        </div>
+                        <h4>Client Side Services</h4>
+                        <p>
+                            I can develop Front-End Websites using latest technologies and frameworks.
+                        </p>
+                    </div>
+                </div>
+                <!-- End-Col -->
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0 " data-aos="fade-right " data-aos-offset="100 " data-aos-delay="50 " data-aos-duration="1000 " data-aos-easing="ease-in-out " data-aos-mirror="true
+        " data-aos-once="true ">
+                    <div class="icon-box ">
+                        <div class="icon ">
+                            <i class="fa-solid fa-server "></i>
+                        </div>
+                        <h4>Server Side Services</h4>
+                        <p>
+                            I can provide server side services by using PHP and latest frameworks.
+                        </p>
+                    </div>
+                </div>
+                <!-- End-Col -->
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0 " data-aos="fade-right " data-aos-offset="100 " data-aos-delay="50 " data-aos-duration="1000 " data-aos-easing="ease-in-out " data-aos-mirror="true
+        " data-aos-once="true ">
+                    <div class="icon-box ">
+                        <div class="icon ">
+                            <i class="fa-brands fa-laravel "></i>
+                        </div>
+                        <h4>Laravel Development</h4>
+                        <p>
+                            I can develop your websites using Laravel Framework and convert your PHP websites into Laravel Framework.
+                        </p>
+                    </div>
+                </div>
+                <!-- End-Col -->
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 " data-aos="fade-left " data-aos-offset="100 " data-aos-delay="50 " data-aos-duration="1000 " data-aos-easing="ease-in-out " data-aos-mirror="true " data-aos-once="true ">
+                    <div class="icon-box ">
+                        <div class="icon ">
+                            <i class="fa-brands fa-chrome "></i>
+                        </div>
+                        <h4>Web Applications</h4>
+                        <p>
+                            I can use my Front-End and Server Side skills to develop Web Applications.
+                        </p>
+                    </div>
+                </div>
+                <!-- End-Col -->
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 " data-aos="fade-left " data-aos-offset="100 " data-aos-delay="50 " data-aos-duration="1000 " data-aos-easing="ease-in-out " data-aos-mirror="true " data-aos-once="true
+        " style="max-width: 100% ">
+                    <div class="icon-box ">
+                        <div class="icon ">
+                            <i class="fa-brands fa-wordpress "></i>
+                        </div>
+                        <h4>Wordpress</h4>
+                        <p>
+                            I can develop custom Wordpress website which helps clients get a finished product end-to-end.
+                        </p>
+                    </div>
+                </div>
+                <!-- End-Col -->
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 " data-aos="fade-left " data-aos-offset="100 " data-aos-delay="50 " data-aos-duration="1000 " data-aos-easing="ease-in-out " data-aos-mirror="true " data-aos-once="true ">
+                    <div class="icon-box ">
+                        <div class="icon ">
+                            <i class="fa-solid fa-wrench "></i>
+                        </div>
+                        <h4>Website Maintenance</h4>
+                        <p>
+                            I can monitor your infrastructure 24/7, investigate problems, and quickly escalate issues based on predetermined procedures.
+                        </p>
+                    </div>
+                </div>
+                <!-- End-Col -->
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 " data-aos="fade-right " data-aos-offset="100 " data-aos-delay="50 " data-aos-duration="1000 " data-aos-easing="ease-in-out " data-aos-mirror="true " data-aos-once="true ">
+                    <div class="icon-box ">
+                        <div class="icon ">
+                            <i class="fa-regular fa-image "></i>
+                        </div>
+                        <h4>Graphic Designing</h4>
+                        <p>
+                            I can provide you with all services related to print media, multimedia and web media.
+                        </p>
+                    </div>
+                </div>
+                <!-- End-Col -->
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 " data-aos="fade-right " data-aos-offset="100 " data-aos-delay="50 " data-aos-duration="1000 " data-aos-easing="ease-in-out " data-aos-mirror="true " data-aos-once="true ">
+                    <div class="icon-box ">
+                        <div class="icon ">
+                            <i class="fa-solid fa-user "></i>
+                        </div>
+                        <h4>UI / UX Design</h4>
+                        <p>
+                            I can convert your UI / UX Designs into pixel perfect websites.
+                        </p>
+                    </div>
+                </div>
+                <!-- End-Col -->
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 " data-aos="fade-right " data-aos-offset="100 " data-aos-delay="50 " data-aos-duration="1000 " data-aos-easing="ease-in-out " data-aos-mirror="true " data-aos-once="true ">
+                    <div class="icon-box ">
+                        <div class="icon ">
+                            <i class="fa-solid fa-share-nodes "></i>
+                        </div>
+                        <h4>Social Media Marketing</h4>
+                        <p>
+                            I can manage and promote your business through social media networks.
+                        </p>
+                    </div>
+                </div>
+                <!-- End-Col -->
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 " data-aos="fade-left " data-aos-offset="100 " data-aos-delay="50 " data-aos-duration="1000 " data-aos-easing="ease-in-out " data-aos-mirror="true " data-aos-once="true ">
+                    <div class="icon-box ">
+                        <div class="icon ">
+                            <i class="fa-solid fa-tablet-screen-button "></i>
+                        </div>
+                        <h4>Responsive Designs</h4>
+                        <p>
+                            I can create responsive websites using latest Bootstrap and custom CSS.
+                        </p>
+                    </div>
+                </div>
+                <!-- End-Col -->
+
+                <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 " data-aos="fade-left " data-aos-offset="100 " data-aos-delay="50 " data-aos-duration="1000 " data-aos-easing="ease-in-out " data-aos-mirror="true " data-aos-once="true ">
+                    <div class="icon-box ">
+                        <div class="icon ">
+                            <i class="fa-solid fa-code "></i>
+                        </div>
+                        <h4>Clean Code</h4>
+                        <p>
+                            I will develop your websites and web applications in clean code.
+                        </p>
+                    </div>
+                </div>
+                <!-- End-Col -->
+
+            </div>
+            <!-- End-Row -->
+            <hr>
+        </div>
+        <!-- End-Services-Details -->
+    </div>
+    <!-- End-Service-Section -->
+
+    <!-- Portfolio-Section -->
+    <div id="portfolio-section" class="container-fluid wrapper">
+        <!-- ===== Portfolio ===== -->
+        <div class="my-portfolio container-fluid ">
+
+            <div class="title " data-aos="fade-down " data-aos-offset="100 " data-aos-delay="50 " data-aos-duration="1000 " data-aos-easing="ease-in-out " data-aos-mirror="true " data-aos-once="true ">
+                <h2>Portfolio</h2>
+                <span>Checkout My Portfolio</span>
+            </div>
+
+            <!-- ===== My-Portfolio ===== -->
+            <div class="my-portfolio ">
+                <!-- ===== Portfolio-Item ===== -->
+                <div class="container-fluid portfolio-item ">
+                    <!-- Title -->
+                    <div class="title ">
+                        <h2>
+                            <a href="# " target="_blank ">
+                            NewAims Pharmaceuticals
+                        </a>
+                        </h2>
+                    </div>
+                    <!-- End-Title -->
+                    <!-- Row -->
+                    <div class="row ">
+                        <div class="col-lg-6 col-md-5 col-12 ">
+                            <!-- Img-Container -->
+                            <div class="img-container ">
+                                <img src="newaims-home.png " alt=" ">
+                            </div>
+                            <!-- End-Img-Container -->
+                        </div>
+                        <!-- End-Col -->
+                        <div class="col-lg-6 col-md-7 col-12 d-flex align-items-center ">
+                            <!-- Details -->
+                            <div class="details ">
+                                <!-- Lang -->
+                                <div class="lang ">
+                                    <h3>
+                                        Technologies Used:
+                                    </h3>
+                                    <!-- List-Container -->
+                                    <div class="list-container ">
+                                        <ul class="tech ">
+                                            <li class="list-item ">
+                                                HTML5
+                                            </li>
+                                            <li class="list-item ">
+                                                CSS3
+                                            </li>
+                                            <li class="list-item ">
+                                                Bootstrap
+                                            </li>
+                                            <li class="list-item ">
+                                                Responsive Design
+                                            </li>
+                                            <li class="list-item ">
+                                                JavaScript
+                                            </li>
+                                            <li class="list-item ">
+                                                jQuery
+                                            </li>
+                                            <li class="list-item ">
+                                                AOS Library
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- End-List-Container -->
+                                </div>
+                                <!-- End-Lang -->
+                                <!-- Overview -->
+                                <div class="overview ">
+                                    <h3>
+                                        Overview:
+                                    </h3>
+                                    <p>
+                                        The Progressive Group of Companies includes NewAims Pharmaceuticals as one of its members. NewAims Pharmaceuticals has become one of the biggest pharmaceutical firms in Pakistan by fusing the best of values, entrepreneurship, strong work ethics, strict
+                                        compliance with current Good Manufacturing Practices (cGMP), and a wide range of products.
+                                    </p>
+                                </div>
+                                <!-- End-Overview -->
+                            </div>
+                            <!-- End-Details -->
+                        </div>
+                        <!-- End-Col -->
+                    </div>
+                    <!-- End-Row -->
+                    <hr>
+                </div>
+                <!-- End-Portfolio-Item -->
+
+                <!-- ===== Portfolio-Item ===== -->
+                <div class="container portfolio-item mt-3 ">
+                    <!-- Title -->
+                    <div class="title ">
+                        <h2>
+                            <a href="# " target="_blank ">
+                            Sazhia Motors
+                        </a>
+                        </h2>
+                    </div>
+                    <!-- End-Title -->
+                    <!-- Row -->
+                    <div class="row flex-row-reverse ">
+                        <div class="col-lg-6 col-md-5 col-12 ">
+                            <!-- Img-Container -->
+                            <div class="img-container ">
+                                <img src="sazhia-home.png " alt=" ">
+                            </div>
+                            <!-- End-Img-Container -->
+                        </div>
+                        <!-- End-Col -->
+                        <div class="col-lg-6 col-md-7 col-12 d-flex align-items-center ">
+                            <!-- Details -->
+                            <div class="details ">
+                                <!-- Lang -->
+                                <div class="lang ">
+                                    <h3>
+                                        Technologies Used:
+                                    </h3>
+                                    <!-- List-Container -->
+                                    <div class="list-container ">
+                                        <ul class="tech ">
+                                            <li class="list-item ">
+                                                HTML5
+                                            </li>
+                                            <li class="list-item ">
+                                                CSS3
+                                            </li>
+                                            <li class="list-item ">
+                                                Bootstrap
+                                            </li>
+                                            <li class="list-item ">
+                                                Responsive Design
+                                            </li>
+                                            <li class="list-item ">
+                                                AOS Library
+                                            </li>
+                                            <li class="list-item ">
+                                                JavaScript
+                                            </li>
+                                            <li class="list-item ">
+                                                jQuery
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- End-List-Container -->
+                                </div>
+                                <!-- End-Lang -->
+                                <!-- Overview -->
+                                <div class="overview ">
+                                    <h3>
+                                        Overview:
+                                    </h3>
+                                    <p>
+                                        Sazhia Motors is a car rental service headquartered in Islamabad offering best packages and less rental charges for latest model vehicles which give reality to your Dreams. Benefit from Sazhia Motors great deals available all year round for a seamless
+                                        car hire experience in Islamabad in Pakistan. Travel your way by choosing from our collection of brand new cars.
+                                    </p>
+                                </div>
+                                <!-- End-Overview -->
+                            </div>
+                            <!-- Details -->
+                        </div>
+                        <!-- End-Col -->
+                    </div>
+                    <!-- End-Row -->
+                    <hr>
+                </div>
+                <!-- End-Portfolio-Item -->
+
+                <!-- ===== Portfolio-Item ===== -->
+                <div class="container portfolio-item mt-3 ">
+                    <!-- Title -->
+                    <div class="title ">
+                        <h2>
+                            <a href="http://abbasyousaf.com/ " target="_blank ">
+                            Abbas Yousaf
+                        </a>
+                        </h2>
+                    </div>
+                    <!-- End-Title -->
+                    <!-- Row -->
+                    <div class="row ">
+                        <div class="col-lg-6 col-md-5 col-12 ">
+                            <!-- Img-Container -->
+                            <div class="img-container ">
+                                <img src="abbas-home.png " alt=" ">
+                            </div>
+                            <!-- End-Img-Container -->
+                        </div>
+                        <!-- End-Col -->
+                        <div class="col-lg-6 col-md-7 col-12 d-flex align-items-center ">
+                            <div class="details ">
+                                <!-- Lang -->
+                                <div class="lang ">
+                                    <h3>
+                                        Technologies Used:
+                                    </h3>
+                                    <!-- List-Container -->
+                                    <div class="list-container ">
+                                        <ul class="tech ">
+                                            <li class="list-item ">
+                                                HTML5
+                                            </li>
+                                            <li class="list-item ">
+                                                CSS3
+                                            </li>
+                                            <li class="list-item ">
+                                                Bootstrap
+                                            </li>
+                                            <li class="list-item ">
+                                                Responsive Design
+                                            </li>
+                                            <li class="list-item ">
+                                                AOS Library
+                                            </li>
+                                            <li class="list-item ">
+                                                JavaScript
+                                            </li>
+                                            <li class="list-item ">
+                                                Typed JS
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- End-List-Container -->
+                                </div>
+                                <!-- End-Lang -->
+                                <!-- Overview -->
+                                <div class="overview ">
+                                    <h3>
+                                        Overview:
+                                    </h3>
+                                    <p>
+                                        Having a sense of belonging is Abbas's obsession, and he frequently discusses it. His distinctive visual style is easily recognizable and elevates every setting in which it is used. His work is motivated by the desire to make everyone who sees it feel
+                                        happy and included.
+                                    </p>
+                                </div>
+                                <!-- End-Overview -->
+                            </div>
+                            <!-- End-Details -->
+                        </div>
+                        <!-- End-Col -->
+                    </div>
+                    <!-- End-Row -->
+                    <hr>
+                </div>
+                <!-- End-Portfolio-Item -->
+
+                <!-- ===== Portfolio-Item ===== -->
+                <div class="container portfolio-item mt-3 ">
+                    <!-- Title -->
+                    <div class="title ">
+                        <h2>
+                            <a href="#" target="_blank ">
+                            Reflex Designs &amp; Architecture
+                        </a>
+                        </h2>
+                    </div>
+                    <!-- End-Title -->
+                    <!-- Row -->
+                    <div class="row flex-row-reverse ">
+                        <div class="col-lg-6 col-md-5 col-12 ">
+                            <!-- Img-Container -->
+                            <div class="img-container ">
+                                <img src="reflex-home.png " alt=" ">
+                            </div>
+                            <!-- End-Img-Container -->
+                        </div>
+                        <!-- End-Col -->
+                        <div class="col-lg-6 col-md-7 col-12 d-flex align-items-center ">
+                            <!-- Details -->
+                            <div class="details ">
+                                <!-- Lang -->
+                                <div class="lang ">
+                                    <h3>
+                                        Technologies Used:
+                                    </h3>
+                                    <!-- List-Container -->
+                                    <div class="list-container ">
+                                        <ul class="tech ">
+                                            <li class="list-item ">
+                                                HTML5
+                                            </li>
+                                            <li class="list-item ">
+                                                CSS3
+                                            </li>
+                                            <li class="list-item ">
+                                                Responsive Design
+                                            </li>
+                                            <li class="list-item ">
+                                                AOS Library
+                                            </li>
+                                            <li class="list-item ">
+                                                JavaScript
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- End-List-Container -->
+                                </div>
+                                <!-- End-Lang -->
+                                <!-- Overview -->
+                                <div class="overview ">
+                                    <h3>
+                                        Overview:
+                                    </h3>
+                                    <p>
+                                        Reflex Designs &amp; Architecture is a global architecture practice that focuses on creating technologically and environmentally cutting-edge structures and public spaces. Reflex Designs &amp; Architecture is also strongly committed to sustainability
+                                        and a pioneer in the design of green buildings; their work frequently achieves high LEED certification levels.
+                                    </p>
+                                </div>
+                                <!-- End-Overview -->
+                            </div>
+                            <!-- End-Details -->
+                        </div>
+                        <!-- End-Col -->
+                    </div>
+                    <!-- End-Row -->
+                </div>
+                <!-- End-Portfolio-Item -->
+            </div>
+            <!-- End-My-Portfolio -->
+            <hr>
+        </div>
+        <!-- End-Portfolio -->
+    </div>
+    <!-- End-Portfolio-Section -->
+
+    <!-- Resume-Section -->
+    <div id="resume-section" class="container-fluid wrapper">
+        <!-- ===== Resume-Details ===== -->
+        <div class="container-fluid my-resume ">
+
+            <div class="title " data-aos="fade-down " data-aos-offset="100 " data-aos-delay="50 " data-aos-duration="1000 " data-aos-easing="ease-in-out " data-aos-mirror="true " data-aos-once="true ">
+                <h2>My Resume</h2>
+                <span>Checkout My Resume</span>
+            </div>
+
+            <!-- ===== My-Resume ===== -->
+
+            <!-- === Row === -->
+            <div class="row ">
+
+                <div class="col-lg-6 ">
+                    <h3 class="resume-title " data-aos="fade-in " data-aos-offset="100 " data-aos-delay="50 " data-aos-duration="1000 " data-aos-easing="ease-in-out " data-aos-mirror="true " data-aos-once="true ">Summary</h3>
+                    <div class="resume-item pb-0 " data-aos="fade-right " data-aos-offset="100 " data-aos-delay="50 " data-aos-duration="1000 " data-aos-easing="ease-in-out " data-aos-mirror="true " data-aos-once="true ">
+                        <h4>Muhammad Souman</h4>
+                        <p><em>Hardworking, creative and deadline-driven Full Stack Web Developer with 3 years of experience providing both client side and server side services.</em></p>
+                        <ul>
+                            <li><i class="fa-solid fa-phone "></i>+92 332 588 2447</li>
+                            <li><i class="fa-solid fa-envelope "></i>muhammadsouman7@gmail.com</li>
+                            <li><i class="fa-solid fa-location-dot "></i>Rawalpindi, Pakistan</li>
+                        </ul>
+                    </div>
+
+                    <!-- Education  -->
+                    <h3 class="resume-title " data-aos="fade-in " data-aos-offset="100 " data-aos-delay="50 " data-aos-duration="1000 " data-aos-easing="ease-in-out " data-aos-mirror="true " data-aos-once="true ">Education</h3>
+
+                    <div class="resume-item " data-aos="fade-right " data-aos-offset="100 " data-aos-delay="50 " data-aos-duration="1000 " data-aos-easing="ease-in-out " data-aos-mirror="true " data-aos-once="true ">
+                        <h4>Bachelors in Artificial Intelligence</h4>
+                        <h5>2023 - Present</h5>
+                        <p><em>National University of Modern Languages, Islamabad</em></p>
+                        <p>
+                            Currently completing my degree in Bachelors in Artificial Intelligence from National University of MOdern Languages, Islamabad with current CGPA of 3.65.
+                        </p>
+                    </div>
+                    <div class="resume-item " data-aos="fade-right " data-aos-offset="100 " data-aos-delay="50 " data-aos-duration="1000 " data-aos-easing="ease-in-out " data-aos-mirror="true " data-aos-once="true ">
+                        <h4>F.Sc Pre Engineering</h4>
+                        <h5>2019 - 2021</h5>
+                        <p><em>Punjab College of Information Technology</em></p>
+                        <p>
+                            Completed F.Sc Pre Engineering from Punjab College of Information Technology in 2020 with A grade.
+                        </p>
+                    </div>
+                </div>
+                <!-- End-Col -->
+
+                <!-- ===== Professional-Experience ===== -->
+                <div class="col-lg-6 ">
+                    <h3 class="resume-title " data-aos="fade-in " data-aos-offset="100 " data-aos-delay="50 " data-aos-duration="1000 " data-aos-easing="ease-in-out " data-aos-mirror="true " data-aos-once="true ">Professional Experience</h3>
+                    <div class="resume-item " data-aos="fade-left " data-aos-offset="100 " data-aos-delay="50 " data-aos-duration="1000 " data-aos-easing="ease-in-out " data-aos-mirror="true " data-aos-once="true ">
+                        <h4>Social Media Manager</h4>
+                        <h5>2022</h5>
+                        <p><em>EVS Professional Training Institute, Rawalpindi</em></p>
+                        <ul>
+                            <li><i class="fa-solid fa-chevron-right "></i>Manage social media planning for execution of marketing strategies and community management.
+                            </li>
+                            <li><i class="fa-solid fa-chevron-right "></i>Maintained strong social media presence across Facebook and Instagram platforms.</li>
+                            <li><i class="fa-solid fa-chevron-right "></i>Assisted the marketing team with developing and implementing social media strategies.</li>
+                            <li><i class="fa-solid fa-chevron-right "></i>Implemented marketing and promotion tactics that led to 34% growth in total social media shares.</li>
+                        </ul>
+                    </div>
+                    <div class="resume-item " data-aos="fade-left " data-aos-offset="100 " data-aos-delay="50 " data-aos-duration="1000 " data-aos-easing="ease-in-out " data-aos-mirror="true " data-aos-once="true ">
+                        <h4>Front-End Web Developer</h4>
+                        <h5>2021 - 2022</h5>
+                        <p><em>EVS Professional Training Institute, Rawalpindi</em></p>
+                        <ul>
+                            <li><i class="fa-solid fa-chevron-right "></i>Designed web applications according to client briefs and modify designs to meet changes in client specifications.</li>
+                            <li><i class="fa-solid fa-chevron-right "></i> Created accessible, responsive and functional user interfaces to allow visitors in any device to have the same perfect user experience.</li>
+                            <li><i class="fa-solid fa-chevron-right "></i>Learned to interact with clients, present designs and handle feedback on work.</li>
+                            <li><i class="fa-solid fa-chevron-right "></i>Provided adequate training to 20+ junior developers.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End-Col -->
+                <!-- End-Professional-Experience -->
+
+            </div>
+            <!-- End-Row -->
+
+            <!-- End-My-Resume -->
+            <hr>
+        </div>
+        <!-- End-Resume-Details -->
+    </div>
+    <!-- End-Resume-Section -->
+
+    <!-- Contact-Section -->
+    <div id="contact-section" class="container-fluid wrapper">
+        <!-- ====== Contact-Details ===== -->
+        <!-- ===== Container ===== -->
+        <div class="contact container-fluid ">
+
+            <div class="title " data-aos="fade-down " data-aos-offset="100 " data-aos-delay="50 " data-aos-duration="1000 " data-aos-easing="ease-in-out " data-aos-mirror="true " data-aos-once="true ">
+                <h2>Contact Me</h2>
+                <span>Contact Details</span>
+            </div>
+
+            <!-- === Row === -->
+            <div class="row mt-2 ">
+
+                <div class="col-md-6 d-flex align-items-stretch " data-aos="fade-right " data-aos-offset="100 " data-aos-delay="50 " data-aos-duration="1000 " data-aos-easing="ease-in-out " data-aos-mirror="true " data-aos-once="true ">
+                    <div class="info-box ">
+                        <i class="fa-solid fa-location-dot "></i>
+                        <h3>My Address</h3>
+                        <p>Asghar Mall, Rawalpindi, Pakistan</p>
+                    </div>
+                </div>
+                <!-- End-Col -->
+
+                <div class="col-md-6 mt-4 mt-md-0 d-flex align-items-stretch " data-aos="fade-left " data-aos-offset="100 " data-aos-delay="50 " data-aos-duration="1000 " data-aos-easing="ease-in-out " data-aos-mirror="true " data-aos-once="true ">
+                    <div class="info-box ">
+                        <i class="fa-solid fa-share-nodes "></i>
+                        <h3>My Social Links</h3>
+                        <div class="social-links ">
+                            <a href="https://www.facebook.com/souman.07/ " target="_blank " class="facebook "><i class="fa-brands fa-facebook "></i></a>
+                            <a href="https://www.instagram.com/m_souman.07/ " target="_blank " class="instagram "><i class="fa-brands fa-instagram "></i></a>
+                            <a href="https://twitter.com/MuhammadSouman1 " target="_blank " class="twitter "><i class="fa-brands fa-twitter "></i></a>
+                            <a href="https://www.linkedin.com/in/muhammad-souman-057705230/ " target="_blank " class="linkedin "><i class="fa-brands fa-linkedin "></i></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- End-Col -->
+
+                <div class="col-md-6 mt-4 d-flex align-items-stretch " data-aos="fade-right " data-aos-offset="100 " data-aos-delay="50 " data-aos-duration="1000 " data-aos-easing="ease-in-out " data-aos-mirror="true " data-aos-once="true ">
+                    <div class="info-box ">
+                        <i class="fa-solid fa-envelope "></i>
+                        <h3>My Email</h3>
+                        <p>muhammadsouman7@gmail.com</p>
+                    </div>
+                </div>
+                <!-- End-Col -->
+
+                <div class="col-md-6 mt-4 d-flex align-items-stretch " data-aos="fade-left " data-aos-offset="100 " data-aos-delay="50 " data-aos-duration="1000 " data-aos-easing="ease-in-out " data-aos-mirror="true " data-aos-once="true ">
+                    <div class="info-box ">
+                        <i class="fa-solid fa-phone "></i>
+                        <h3>My Contact Numbers</h3>
+                        <p>+92 332 588 2447</p>
+                        <p>+92 311 945 5349</p>
+                    </div>
+                </div>
+                <!-- End-Col -->
+
+            </div>
+            <!-- End-Row -->
+
+            <!-- ===== Contact-Form ===== -->
+            <form action=" " method="post " id="contact_form " role="form " class="contact-form mt-4 " data-aos="fade-down " data-aos-offset="100 " data-aos-delay="50 " data-aos-duration="1000 " data-aos-easing="ease-in-out " data-aos-mirror="true
+        " data-aos-once="true ">
+                <!-- === Row === -->
+                <h2>
+                    E-Mail me your requests!
+                </h2>
+                <div class="row ">
+                    <div class="form-group mt-3 ">
+                        <input type="text " name="name " class="form-control " id="name " placeholder="Your Name " required>
+                    </div>
+                    <div class="form-group mt-3 ">
+                        <input type="email " class="form-control " name="email " id="email " placeholder="Your Email " required>
+                    </div>
+                </div>
+                <!-- End-Row -->
+
+                <div class="form-group mt-3 ">
+                    <input type="text " class="form-control " name="subject " id="subject " placeholder="Subject " required>
+                </div>
+                <div class="form-group mt-3 ">
+                    <textarea class="form-control " name="message " id="message " rows="5 " placeholder="Message " required></textarea>
+                </div>
+                <div class="text-center "><button type="submit" id="send_mail">Send Message</button></div>
+            </form>
+            <!-- End-Contact-Form -->
+
+        </div>
+        <!-- End-Container -->
+
+        <!-- End-Contact-Details -->
+    </div>
+    <!-- End-Contact-Section -->
+
+    <!-- ===== Footer ===== -->
+    <div id="footer " class=" footer pt-2 pb-2 " data-aos="fade-up " data-aos-offset="100 " data-aos-delay="50 " data-aos-duration="1000 " data-aos-easing="ease-in-out " data-aos-mirror="true " data-aos-once="true ">
+        <div class="container text-center text-md-left ">
+
+            <!-- === Row === -->
+            <div class="row align-items-center ">
+
+                <div class="col-md-7 col-lg-8 ">
+                    <p>
+                        Copyright ©2024 All rights reserved by:
+                        <strong>
+                          Muhammad Souman
+                      </strong>
+                    </p>
+                </div>
+                <!-- End-Col -->
+
+                <div class="col-md-5 col-lg-4 ">
+                    <div class="text-center text-md-right ">
+                        <ul class="list-unstyled list-inline ">
+                            <li class="list-inline-item ">
+                                <a href="https://www.facebook.com/souman.07/ " target="_blank " class="btn-floating btn-sm " style="font-size: 20px; ">
+                                    <i class="fa-brands fa-facebook" style="color: #E0E0E0;"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item ">
+                                <a href="https://www.instagram.com/m_souman.07/ " target="_blank " class="btn-floating btn-sm " style="font-size: 20px; ">
+                                    <i class="fa-brands fa-instagram" style="color: #E0E0E0;"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item ">
+                                <a href="https://twitter.com/MuhammadSouman1 " target="_blank " class="btn-floating btn-sm " style="font-size: 20px; ">
+                                    <i class="fa-brands fa-twitter" style="color: #E0E0E0;"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item ">
+                                <a href="https://www.linkedin.com/in/muhammad-souman-057705230/ " target="_blank " class="btn-floating btn-sm " style="font-size: 20px; ">
+                                    <i class="fa-brands fa-linkedin" style="color: #E0E0E0;"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- End-Col -->
+
+            </div>
+            <!-- End-Row -->
+
+        </div>
+    </div>
+    <!-- End-Footer -->
+
+    <!-- ===== JavaScript-Links ===== -->
+
+    <!-- === Typed-JS === -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12 "></script>
+    <script>
+        var typed = new Typed('.type', {
+            strings: [
+                'Full Stack Web Developer',
+                'Freelancer',
+                'Social Media Marketer',
+            ],
+            typeSpeed: 60,
+            backSpeed: 60,
+            loop: true,
+        });
+    </script>
+
+    <!-- === JS-Files === -->
+    <script src="bootstrap.js "></script>
+    <script src="script.js "></script>
+    <script src="nav.js"></script>
+
+</body>
+
+</html

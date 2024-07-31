@@ -1,0 +1,21 @@
+:root {
+    /* Electric-Blue Theme */
+    --blue: #373e98;
+    --pink: #f16775;
+    --yellow: #fee36e;
+    --yellow-green: #ceb92c;
+    --black: #2a2a2a;
+    /* Lemon-Lime Theme */
+    --light-lime: #abd699;
+    --fresh-lemon: #ffe26a;
+    --teal: #75c9b7;
+    --mint: #c7ddcc;
+    --navy: #16123f;
+    /* Blue-Pink Theme */
+    --main-color: #f16775;
+    --black: #E0E0E0;
+    --white: #373e98;
+    --light-black: #E0E0E0;
+    --heading-color: #373e98;
+    --transparent-black: #E0E0E0;
+}

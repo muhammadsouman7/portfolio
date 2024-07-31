@@ -1,0 +1,78 @@
+/* Vertical Animation */
+
+body {
+    overflow: unset;
+}
+
+.fade-top {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.fade-top.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.fade-down {
+    position: relative;
+    transform: translateY(-150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.fade-down.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.row {
+    overflow: hidden;
+}
+
+
+/* end */
+
+
+/* Horizontal Reveal */
+
+.fade-left {
+    position: relative;
+    transform: translateX(-150px);
+    opacity: 0;
+    transition: 1s all ease;
+    overflow: hidden;
+}
+
+.fade-left.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.fade-right {
+    position: relative;
+    transform: translateX(150px);
+    opacity: 0;
+    transition: 1s all ease;
+    overflow: hidden;
+}
+
+.fade-right.active {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
+/* end */
+
+.fade-in {
+    position: relative;
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+.fade-in.active {
+    opacity: 1;
+}
