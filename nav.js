@@ -26,12 +26,13 @@ var sections = [homeSection, aboutSection, serviceSection, portfolioSection, res
 
 // Scroll Event Handler
 window.onscroll = () => {
-    let top = window.scrollY;
+    let top = window.scrollY + window.innerHeight / 2;
 
     for (let i = 0; i < sections.length; i++) {
         let sectionOffset = sections[i].offsetTop;
         let sectionHeight = sections[i].offsetHeight;
 
+        // Check if the section is in the viewport
         if (top >= sectionOffset && top < sectionOffset + sectionHeight) {
             setActive(navItems[i], mobNavItems[i]);
             break;
@@ -41,13 +42,25 @@ window.onscroll = () => {
 
 // Click Event Handlers for desktop and mobile nav items
 navItems.forEach((item, index) => {
-    item.addEventListener("click", () => {
+    item.addEventListener("click", (event) => {
+        event.preventDefault(); // Prevent default anchor behavior
+
+        // Scroll to the section
+        sections[index].scrollIntoView({ behavior: "smooth" });
+
+        // Update the active class
         setActive(item, mobNavItems[index]);
     });
 });
 
 mobNavItems.forEach((item, index) => {
-    item.addEventListener("click", () => {
+    item.addEventListener("click", (event) => {
+        event.preventDefault(); // Prevent default anchor behavior
+
+        // Scroll to the section
+        sections[index].scrollIntoView({ behavior: "smooth" });
+
+        // Update the active class
         setActive(navItems[index], item);
     });
 });
@@ -62,3 +75,6 @@ function setActive(desktopLink, mobileLink) {
     desktopLink.classList.add("active");
     mobileLink.classList.add("active");
 }
+
+// CSS for smooth scrolling
+document.documentElement.style.scrollBehavior = 'smooth';
