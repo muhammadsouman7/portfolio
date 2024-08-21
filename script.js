@@ -148,3 +148,29 @@ function backToTop() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+
+// Function to disable scrolling
+function disableScroll() {
+    document.body.style.overflow = 'hidden';
+}
+
+// Function to enable scrolling
+function enableScroll() {
+    document.body.style.overflow = 'auto';
+}
+
+// Simulating loading items onto the DOM
+function loadItems() {
+    disableScroll(); // Disable scrolling
+
+    // Simulate a delay for loading items
+    setTimeout(() => {
+        // Your code to load items goes here...
+
+        enableScroll(); // Re-enable scrolling after items are loaded
+    }, 2000); // Simulated loading time
+}
+
+// Call the function to load items
+loadItems();
