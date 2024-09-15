@@ -752,6 +752,15 @@ body {
     padding: 10px 0 20px 0;
 }
 
+.overview .view-project {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.overview .view-project:hover {
+    text-decoration: underline;
+}
+
 .portfolio-item .title h2::before,
 .portfolio-item .title h2::after {
     width: 15px;
